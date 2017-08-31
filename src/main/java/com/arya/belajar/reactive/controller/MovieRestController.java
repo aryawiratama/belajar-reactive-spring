@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-@RestController
-@RequestMapping({"/movies"})
+//@RestController
+//@RequestMapping({"/movies"})
 public class MovieRestController {
 
-    private MovieService movieService;
+    /*private MovieService movieService;
 
     @Autowired
     public MovieRestController(MovieService movieService) {
@@ -36,5 +36,5 @@ public class MovieRestController {
     @GetMapping(path = "/{movieId}/schedules", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<MovieEvent> schedules(@PathVariable("movieId")String movieId){
         return movieService.movieSchedule(movieId);
-    }
+    }*/
 }
